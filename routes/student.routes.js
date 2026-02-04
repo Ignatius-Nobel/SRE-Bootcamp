@@ -5,6 +5,6 @@ import { createStudent } from "../controllers/student.controller.js";
 
 const router = Router()
 
-router.post("/",validate(createStudentSchema),createStudent)
+router.post("/create",validate(createStudentSchema),createStudent)
 
 export default router
