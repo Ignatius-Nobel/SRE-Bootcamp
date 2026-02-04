@@ -7,7 +7,7 @@ app.use(express.json())
 const port = process.env.PORT
 
 app.get("/healthcheck", (_, res) => res.send("Ok"))
-app.use("/student",studentRoutes)
+app.use("/api/v1/student",studentRoutes)
 
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
